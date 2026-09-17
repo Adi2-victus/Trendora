@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import logo from "../../assets/Trendora.png"
 import axios from 'axios'
-import { authDataContext } from '../../context/authContext'
+import { authDataContext } from '../../context/AuthContext'
 import { adminDataContext } from '../../context/AdminContext'
 import { toast } from 'react-toastify'
 

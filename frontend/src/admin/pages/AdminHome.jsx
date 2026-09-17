@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import AdminNav from '../components/AdminNav'
 import AdminSidebar from '../components/AdminSidebar'
-import { authDataContext } from '../../context/authContext'
+import { authDataContext } from '../../context/AuthContext'
 import axios from 'axios'
 
 function AdminHome() {
