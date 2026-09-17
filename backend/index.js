@@ -18,22 +18,22 @@ let app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
- origin:["http://localhost:5173" , "http://localhost:5174","https://trendora-lp5d.onrender.com"],
- credentials:true
+  origin: ["http://localhost:5173", "https://trendora-zsay.vercel.app/"],
+  credentials: true
 }))
 
-app.use("/api/auth",authRoutes)
-app.use("/api/user",userRoutes)
-app.use("/api/product",productRoutes)
-app.use("/api/cart",cartRoutes)
-app.use("/api/order",orderRoutes)
-app.use("/api/ai",aiRoutes)
+app.use("/api/auth", authRoutes)
+app.use("/api/user", userRoutes)
+app.use("/api/product", productRoutes)
+app.use("/api/cart", cartRoutes)
+app.use("/api/order", orderRoutes)
+app.use("/api/ai", aiRoutes)
 
 
 
 
-app.listen(port,()=>{
-    console.log("Hello From Server")
-    connectDb()
+app.listen(port, () => {
+  console.log("Hello From Server")
+  connectDb()
 })
 
